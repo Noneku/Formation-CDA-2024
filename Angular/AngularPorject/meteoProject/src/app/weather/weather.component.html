@@ -1,0 +1,21 @@
+
+    <div class="card h-100">
+      <div class="card-header bg-dark">
+        <h5 class="card-title text-white">Météo</h5>
+      </div>
+      <div class="bg-dark bg-opacity-25">
+        <img src="https://openweathermap.org/img/wn/{{ iconMetaData }}.png" alt="">
+      </div>
+      <div class="card-body bg-dark bg-opacity-25">
+        <div class="row">
+          <div class="mb-3">
+            <h6 class="card-subtitle text-danger">Température : {{ tempMetaData }} ° Degrés</h6>
+            <p class="card-text"></p>
+          </div>
+          <div class="mt-1">
+            <h6 class="card-subtitle text-danger">Temps : {{ statusWeatherMetaData }}</h6>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>

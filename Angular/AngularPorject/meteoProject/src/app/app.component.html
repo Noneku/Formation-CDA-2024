@@ -1,0 +1,40 @@
+<video id="background-video" autoplay loop>    
+  <source src="../assets/background/vecteezy_animated-lightning-storm-background_1623182.mp4" type="video/mp4">
+</video>
+<router-outlet class="row col-12 mt-5 animate__animated animate__backInDown">
+    
+    <app-header class=""></app-header>
+    <div class="row mx-auto">
+        
+        <app-form-postal
+        class="col-6 mx-auto mt-5"
+        (dataCityAPI)="handleVilleJson($event)"
+        (dataWeatherAPI)="handleWeatherJson($event)"
+        ></app-form-postal>
+        
+        <div id="componentWeather" class="d-flex flex-row justify-content-around align-items-lg-stretch mt-3 d-none animate__animated animate__fadeInLeft">
+            <app-geo-position
+            class="w-25"
+            [geoPositionMetaDataX]="geoPositionX"
+            [geoPositionMetaDataY]="geoPositionY"
+            [cityMetaData]="city"
+            ></app-geo-position>
+            
+            <app-weather
+              class="w-25"
+              [tempMetaData]="temp"
+              [statusWeatherMetaData]="statusWeather"
+              [iconMetaData]="iconWeather"
+              ></app-weather>
+          </div>
+
+          <app-map
+          id="componentMap"
+          class="col-6 mx-auto mt-5"
+          [geoPositionMetaDataX]="geoPositionX"
+          [geoPositionMetaDataY]="geoPositionY"
+          ></app-map>
+        </div>
+        <app-footer></app-footer>
+  </router-outlet>
+    

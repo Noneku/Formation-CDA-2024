@@ -1,0 +1,16 @@
+<div class="">
+  <div class="row justify-content-center">
+    <div class="">
+      <form [formGroup]="postalForm" (ngSubmit)="onSubmit()" class="col-12 bg-dark p-5 rounded border bg-opacity-25">
+        <div>
+          <h5 class="text-danger"> HI !</h5>
+          <label class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel at saepe quisquam magni, cum molestias? Quaerat ratione ab dolorum culpa accusamus, aliquam illo maxime atque, voluptatum voluptates ipsa, id deserunt.</label>
+          <input type="text" class="form-control mt-3" id="postalCode" formControlName="postalCode" placeholder="Entrer le code postal ici !">
+        </div>
+        <div class="row justify-content-center">
+          <button type="submit" class="btn btn-danger mt-4 rounded-5 col-6">Valider</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

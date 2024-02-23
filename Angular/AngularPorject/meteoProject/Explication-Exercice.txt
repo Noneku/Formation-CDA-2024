@@ -1,0 +1,14 @@
+Avoir 4 composants différents et 1 seul qui gère la vue
+composent = {
+    - 1 formulaire qui demande un code postal
+    - Utilisé le code postal pour récuperer les cordoonées GPS + afficher méteo + ville
+    - Un compoant méteo par rapport au code postal
+    - Afficher sur la carte en rapport avec code postal -LiftLeft
+}
+
+
+Api = {
+    méteo : OpenWeatherMap
+    Code Postal : APiban
+    Carte : LiftLeft
+}
